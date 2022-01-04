@@ -1,0 +1,25 @@
+{
+  "name": "mvc-tech-blog-rpb",
+  "version": "1.0.0",
+  "description": "tech blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RPB543/mvc-tech-blog-rpb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RPB543/mvc-tech-blog-rpb/issues"
+  },
+  "homepage": "https://github.com/RPB543/mvc-tech-blog-rpb#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^6.0.2",
+    "sequelize": "^7.0.0-alpha.4"
+  }
+}
