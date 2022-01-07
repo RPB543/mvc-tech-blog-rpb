@@ -142,6 +142,7 @@ main {
 
 .color {
   color:#90A5A9;
+  background-color: #d0d9cd;
 }
 
 .info {
@@ -154,7 +155,6 @@ main {
 
 .comment-form {
   margin-bottom: 5%;
-  background-color: #d0d9cd;
 }
 
 .comment {
