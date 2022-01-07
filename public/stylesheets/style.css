@@ -143,9 +143,6 @@ main {
 .color {
   color:#90A5A9;
 }
-li {
-  list-style: none;
-}
 
 .info {
   justify-content: flex-end;
