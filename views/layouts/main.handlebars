@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Tech Blog</a>
+      <h1 class="has-text-black px-3 py-3 has-text-weight-bold">
+        <a href="/">Home</a>
       </h1>
-      <nav>
+      <nav navbar mt-2>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <a href="/dashboard" class="px-3">dashboard</a>
+        <a href="/dashboard/create/" >create post</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>

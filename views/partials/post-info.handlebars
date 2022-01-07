@@ -1,11 +1,24 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_url}})</span>
-  </div>
-  <div class="meta">
-    Comment left by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
-</article>
+<div class="card mb-6">
+  <header class="card-header card-header-title color">
+    
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+      <a href="/post/{{id}}"  class="color is-capitalized is-pulled-left">{{title}} </a></p>
+      </div>
+      <div class="column">
+           <div class="is-pulled-right">
+                <b>{{user.username}}</b>
+                 | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+            </div>
+      <span class=""> </span>
+      </div>
+    
+  </header>
+
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{post_content}}
+        </div>
+            
+        
+    </div>
