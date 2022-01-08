@@ -2,106 +2,31 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    post_content: 'This is crazy',
-    user_id: 10
-  },
-  {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_content: 'We should go swimming',
-    user_id: 8
-  },
-  {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    post_content: 'WOOOOOO its time to go',
+    title: "Taskmaster goes public!",
+    post_content: "Taskinator is a task-tracker app that will allow you to organize your personal to-do list items by clicking and dragging them into categories like To Do, In Progress, and Completed.",
+    user_id: 3
+},
+{
+    title: "Zoo Keepr reaches 1 million subscribers!",
+    post_content: "The local zoo has received funding to build a new online catalog, and they've asked to create a web server for a front-end application they’re developing, called Zoo Keepr. This site’s data will be stored on the server. This will allow animal enthusiasts to access the data from different locations and browsers without needing to download it to their device",
     user_id: 1
-  },
-  {
-    title: 'Nunc purus.',
-    post_content: 'Feed me french fries and milkshakes',
-    user_id: 4
-  },
-  {
-    title: 'Pellentesque eget nunc.',
-    post_content: 'there was a shooting star show last night',
-    user_id: 7
-  },
-  {
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    post_content: 'Walk it like I talk it',
-    user_id: 4
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'Dogs are my favorite animal',
-    user_id: 1
-  },
-  {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_content: 'We should all go to the next football game and tailgate',
-    user_id: 1
-  },
-  {
-    title: 'Duis ac nibh.',
-    post_content: 'I do not know what else to say',
-    user_id: 9
-  },
-  {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    post_content: 'Yo quiero visitar Colombia otro vez',
+},
+{
+    title: "Work Day Scheduler tool now available!",
+    post_content: "A simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. Use Moment.js library to work with date and time",
+    user_id: 2
+
+},
+{
+    title: "Tech Blog has been released!",
+    post_content: "A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This site will be built from scratch and deployed to Heroku. The app will follow MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication",
     user_id: 5
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'Pandas look warm and cuddly',
-    user_id: 3
-  },
-  {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_content: 'Is it summer yet?',
-    user_id: 10
-  },
-  {
-    title: 'Donec dapibus.',
-    post_content: 'When is this class over?',
-    user_id: 8
-  },
-  {
-    title: 'Nulla tellus.',
-    post_content: 'Blue flowers are better than red',
-    user_id: 3
-  },
-  {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_content: 'HEB is the greatest grocery store in the planet',
-    user_id: 3
-  },
-  {
-    title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    post_content: 'How much more do I need to do?',
-    user_id: 7
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'Running is a good form of exercise',
-    user_id: 6
-  },
-  {
-    title: 'Etiam justo.',
-    post_content: 'Driving fastly thru a school zone is a bad idea',
+},
+{
+    title: "Just Tech News goes public!",
+    post_content: "Just Tech News—a tech news website where users can post, upvote, and comment on links to news articles. Use Sequelize, an object-relational mapping (ORM) library, to simplify your MySQL queries, add password hashing so that users can create secure passwords, and connect your application to JawsDB, a MySQL add-on for Heroku",
     user_id: 4
-  },
-  {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    post_content: 'You should learn how to cook mexican food',
-    user_id: 6
-  },
-  {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    post_content: 'They want to go dancing on Saturday',
-    user_id: 7
-  }
+}
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
