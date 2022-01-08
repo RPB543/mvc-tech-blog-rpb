@@ -11,6 +11,9 @@ router.get('/', (req, res) => {
     });
 });
 
+// type = POST
+// route = /api/comments/
+// tested ok
 router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
