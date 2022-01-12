@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
 // get all users
+// route = /api/users
+// type = GET, tested ok
 router.get('/', (req, res) => {
   User.findAll({
     attributes: { exclude: ['password'] }
@@ -13,6 +15,8 @@ router.get('/', (req, res) => {
     });
 });
 
+// route = /api/users/id
+// type = GET, tested ok
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -47,6 +51,8 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// route = /api/users
+// type = POST, tested ok
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
@@ -69,6 +75,8 @@ router.post('/', (req, res) => {
     });
 });
 
+// route = /api/users/login
+// type = POST, tested ok
 router.post('/login', (req, res) => {
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
   User.findOne({
@@ -98,6 +106,8 @@ router.post('/login', (req, res) => {
   });
 });
 
+// route = /api/users/logout
+// type = POST, tested ok
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -109,6 +119,8 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// route = /api/users/id
+// type = PUT, tested ok
 router.put('/:id', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
 
@@ -132,6 +144,8 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// route = /api/users/id
+// type = POST, tested ok
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {
