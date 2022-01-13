@@ -7,7 +7,7 @@
     "watch": "nodemon server.js",
     "start": "node server.js",
     "seeds": "node seeds/index.js",
-    "heroku-postinstall": "mpn run seeds"
+    "heroku-postbuild": "mpn run seeds"
   },
   "repository": {
     "type": "git",
