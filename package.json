@@ -6,8 +6,7 @@
   "scripts": {
     "watch": "nodemon server.js",
     "start": "node server.js",
-    "seeds": "node seeds/index.js",
-    "heroku-postbuild": "mpn run seeds"
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
